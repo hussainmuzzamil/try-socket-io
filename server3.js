@@ -2,6 +2,7 @@ var app = require('express').createServer()
   , io = require('socket.io').listen(app);
 
 app.listen(80);
+//added on 16th-Aug-2013
 
 app.get('/', function (req, res) {
   res.sendfile(__dirname + '/index.html');
